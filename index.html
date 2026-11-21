@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="自身の情熱をあなたがロゴにするPLAはあなたの情熱をロゴに変換する錬金術師です。">
+<title>PLA｜自身の情熱をあなたがロゴにする</title>
+<style>
+:root{--ink:#171717;--muted:#686868;--paper:#fbfaf7;--white:#fff;--gold:#b68a43;--line:#e5e0d8;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.9;letter-spacing:.025em}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 52px));margin:auto}
+menu-toggle{display:none}
+header{height:104px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;position:relative;z-index:2}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}.brand img{display:block;width:272px;height:auto}nav{display:flex;align-items:center;gap:25px;font-size:18px;color:#444}nav a{text-decoration:none;white-space:nowrap}nav a:hover{opacity:.6}.nav-cta{background:var(--ink);color:#fff;padding:10px 17px}
+.hero{min-height:610px;display:flex;align-items:center;position:relative;overflow:hidden;background:#111;color:#fff}.hero:before{content:"";position:absolute;inset:0 0 0 40%;background-image:linear-gradient(90deg,#111 0%,rgba(17,17,17,.45) 28%,rgba(17,17,17,.05) 72%),url("assets/hero-fist.jpg");background-size:cover;background-position:center 43%;opacity:.94}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.28),transparent 45%);pointer-events:none}.hero-content{position:relative;z-index:1;width:min(var(--max),calc(100% - 52px));margin:auto;padding:94px 0 88px}.eyebrow,.kicker{font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:800;margin:0 0 17px}.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(37px,5.3vw,66px);line-height:1.45;letter-spacing:.06em;margin:0 0 23px;max-width:680px}.hero-lead{font-size:clamp(18px,2.1vw,23px);font-weight:700;margin:0 0 13px}.hero-copy{max-width:590px;color:#e1ded9;font-size:14px;line-height:2.1;margin:0}.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:31px;padding:14px 28px;background:var(--gold);color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.08em}.cta:hover{filter:brightness(1.08)}.cta span{margin-left:20px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:31px}
+.cta-row .cta{margin-top:0}
+.cta-secondary{background:transparent;border:1px solid currentColor;color:inherit}
+header .nav-actions{display:flex;align-items:center;gap:10px;margin-left:4px}
+nav .nav-actions a{padding:9px 13px;font-weight:700}
+nav .nav-actions .nav-contact{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+nav .nav-actions .nav-apply{background:var(--ink);color:#fff}
+
+section{padding:86px 0}section.white{background:var(--white)}.center{text-align:center}.narrow{max-width:780px;margin:0 auto}.lead{font-size:17px;font-weight:600;line-height:1.95}.muted{color:var(--muted);font-size:17px}h2{font-size:clamp(27px,4vw,42px);line-height:1.5;margin:0 0 27px;letter-spacing:.04em}h3{font-size:19px;line-height:1.6;margin:0 0 12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.panel{padding:36px;background:#f0ece5}.statement{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(25px,3.5vw,38px);font-weight:700;line-height:1.65}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}.step{padding:22px 18px;border-top:2px solid var(--gold);background:var(--paper)}.step b{display:block;font-size:11px;letter-spacing:.15em;color:var(--gold);margin-bottom:10px}.step p,.benefit p{font-size:16px;margin:0;color:var(--muted)}.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.role{border:1px solid var(--line);padding:28px;background:#fff}.tag{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:.14em}.role ul{padding-left:1.2em;margin:14px 0 0;font-size:14px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.benefit{padding:26px 22px;background:var(--paper);border:1px solid var(--line)}.num{font-size:12px;color:var(--gold);letter-spacing:.15em}.benefit h3{margin:10px 0}.creator-note{max-width:820px;margin:58px auto 0;padding:48px 54px;background:#f0ece5;text-align:center}.creator-note h2{margin-bottom:22px}.creator-note p:not(.kicker){font-size:16px;color:var(--muted);margin:10px 0}.creator-note .creator-lead{font-size:20px!important;font-weight:800;color:var(--ink)!important}.creator-note .creator-emphasis{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(23px,3vw,32px)!important;font-weight:700;color:var(--ink)!important;margin:25px 0!important;line-height:1.7}@media(max-width:600px){.creator-note{padding:34px 22px;margin-top:38px}}
+.price{font-size:clamp(36px,5vw,54px);font-weight:800;letter-spacing:.02em}.price small{font-size:14px;font-weight:500}.deliverables{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:25px 0 0;padding:0;list-style:none}.deliverables li{background:#fff;padding:12px 16px;border:1px solid var(--line);font-size:16px}.faq{max-width:820px;margin:34px auto 0}details{border-top:1px solid var(--line);padding:20px 0}details:last-child{border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:16px;margin:12px 0 0}.profile{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:48px;align-items:center}.profile-photo{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:center 35%;filter:saturate(.82)}.profile-copy{font-size:17px}.profile-name{font-size:22px;font-weight:800;margin:0 0 18px}.profile-note{font-size:12px;color:var(--muted)}.contact{background:#171717;color:#fff}.contact .muted{color:#d0ccc5}.contact .kicker{color:#d4aa68}footer{padding:30px 0;background:#111;color:#bbb;font-size:11px;text-align:center;letter-spacing:.1em}
+.footer-links{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px 28px;margin-top:14px}
+.footer-links a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.footer-links a:hover{opacity:.72}
+@media(max-width:600px){.footer-links{gap:10px 18px;font-size:10px}}
+.note{font-size:14px;color:var(--muted);margin-top:22px}
+@media(max-width:800px){header{height:88px}.brand img{width:232px}nav{gap:13px;font-size:16.5px}.hero{min-height:570px}.hero:before{left:20%;background-position:57% center;opacity:.68}.hero-content{padding:78px 0}.hero h1{font-size:clamp(35px,7vw,54px)}.steps{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){
+header{height:82px}
+.header-inner{position:relative}
+.wrap,.hero-content{width:calc(100% - 36px)}
+.brand img{width:190px}
+.menu-toggle{display:flex;width:42px;height:42px;padding:9px 7px;border:1px solid var(--line);background:#fff;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}
+.menu-toggle span{display:block;width:100%;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+nav#site-nav{display:none;position:absolute;top:calc(100% + 1px);left:-18px;right:-18px;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 18px 18px;box-shadow:0 12px 20px rgba(0,0,0,.09);flex-direction:column;align-items:stretch;gap:0;font-size:16px}
+nav#site-nav.is-open{display:flex}
+nav#site-nav a{display:block;padding:11px 4px;border-bottom:1px solid #eee}
+nav#site-nav a.nav-cta{margin-top:10px;text-align:center;border:0;padding:12px}
+nav#site-nav .nav-actions{display:flex;flex-direction:column;gap:8px;margin:10px 0 0}
+nav#site-nav .nav-actions a{margin:0;text-align:center;padding:12px;border:1px solid var(--ink)}
+nav#site-nav .nav-actions .nav-apply{border:1px solid var(--ink)}
+
+.menu-toggle{display:flex}
+.hero{min-height:620px;align-items:flex-end}.hero:before{inset:0;background-image:linear-gradient(0deg,#111 0%,rgba(17,17,17,.88) 22%,rgba(17,17,17,.18) 100%),url("assets/hero-fist.jpg");background-position:57% top;opacity:.82}.hero-content{padding:250px 0 56px}.hero h1{font-size:36px}.hero-copy{font-size:15px}.hero .cta-row{align-items:stretch;flex-direction:column;max-width:320px}.hero .cta-row .cta{width:100%}section{padding:64px 0}.two,.role-grid,.profile{grid-template-columns:1fr}.steps,.benefits{grid-template-columns:1fr}.profile{gap:26px}.profile-photo{max-width:340px;margin:auto}.deliverables{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap header-inner">
+<a class="brand" href="#" aria-label="PLA トップ"><img src="assets/pla-logo-horizontal.svg" alt="PLA Passion-to-Logo Alchemist"></a>
+<button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+<span></span><span></span><span></span>
+</button>
+<nav id="site-nav">
+<a href="#about">PLAについて</a><a href="#benefits">特徴</a><a href="#flow">制作の流れ</a><a href="#price">料金</a><a href="#faq">よくある質問</a><span class="nav-actions"><a class="nav-contact" href="https://docs.google.com/forms/d/e/1FAIpQLSc4mRXDss__qDh6ck3ma7S_2ZZkLltTQEIHplTkXccbGbD9vQ/viewform" target="_blank" rel="noopener">お問い合わせ</a><a class="nav-apply" href="https://docs.google.com/forms/d/e/1FAIpQLSfX1MZOWhq-PyY6hwPhu2z187iJiRLyfEiiHCX023OsHauqnw/viewform" target="_blank" rel="noopener">お申し込み</a></span>
+</nav>
+</div></header>
+<main>
+<section class="hero"><div class="hero-content">
+<p class="eyebrow">PASSION-TO-LOGO ALCHEMIST</p>
+<h1>そのロゴ、<br>心から愛せますか？</h1>
+<p class="hero-lead">自身の情熱をあなたがロゴにする</p>
+<p class="hero-copy">あなたの中にある情熱や想いを出発点に、プロのデザイン視点と技術でロゴへと変換する。それが、PLAのロゴづくりです。</p>
+<div class="cta-row"><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc4mRXDss__qDh6ck3ma7S_2ZZkLltTQEIHplTkXccbGbD9vQ/viewform" target="_blank" rel="noopener">お問い合わせ・相談する <span>›</span></a><a class="cta cta-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfX1MZOWhq-PyY6hwPhu2z187iJiRLyfEiiHCX023OsHauqnw/viewform" target="_blank" rel="noopener">お申し込み <span>›</span></a></div>
+</div></section>
+
+<section class="white" id="about"><div class="wrap narrow center"><p class="kicker">01 / THE QUESTION</p><h2>あなたの事業の顔を、<br>誰かに任せきりにしていませんか。</h2><p class="lead">AI任せ、人任せ。その結果、あなたの想いはどこに。</p><p class="muted">ロゴには、なぜこの事業を始めたのか、何を大切にしているのか、これからどうなりたいのか。あなた自身の想いが表れます。</p><p class="muted">だからこそ、最初から誰かに答えを委ねるのではなく、自分の頭で考え、自分の意思で選び、納得して形にしてほしい。</p></div></section>
+
+<section><div class="wrap two"><div><p class="kicker">02 / OUR APPROACH</p><h2>だったら、<br>自分で作ればいい。</h2><p class="lead">ただし、すべてを一人でやる必要はありません。</p><p class="muted">PLAでは、あなたが想いを出し、考え、選び、決めていきます。私はプロのデザイン視点から方向性を整理し、形にするための技術と制作を担います。</p><p class="muted">あなたの情熱を、デザインとして成立するロゴへ。二人で一緒につくり上げます。</p></div><div class="panel"><p class="kicker">PLA CONCEPT</p><p class="statement">PLAは、あなたの情熱をロゴに変換する錬金術師なのです。</p></div></div></section>
+
+<section class="white" id="benefits"><div class="wrap"><div class="center"><p class="kicker">03 / WHAT YOU GET</p><h2>PLAで得られるもの</h2><p class="muted">完成したロゴだけではありません。</p></div><div class="benefits">
+<article class="benefit"><span class="num">01</span><h3>自分の想いから生まれたロゴ</h3><p>自分で考え、選び、決めたからこそ、事業の顔として愛着と誇りを持てるロゴになります。</p></article>
+<article class="benefit"><span class="num">02</span><h3>プロのデザイン視点</h3><p>形や色を選ぶだけでなく、目的や伝わり方を踏まえて、デザインとして成立する方向へ導きます。</p></article>
+<article class="benefit"><span class="num">03</span><h3>プロによる制作と仕上げ</h3><p>Illustratorによる技術的な制作・調整・仕上げは、経験を持つデザイナーが担当します。</p></article>
+<article class="benefit"><span class="num">04</span><h3>個別の伴走サポート</h3><p>対話やチャットを通じて、あなたの考えを整理しながら一つずつ形にしていきます。</p></article>
+<article class="benefit"><span class="num">05</span><h3>PLA ORIGINAL LOGORIA</h3><p>ロゴに込めた想いやデザインの意味、制作者であるあなたの名前を記した、PLAオリジナルの「LOGORIA（記録書）」を発行します。</p></article>
+<article class="benefit"><span class="num">06</span><h3>自分の事業を見つめ直す時間</h3><p>ロゴづくりを通して、自分が何を大切にし、何を伝えたいのかを言葉と形にしていきます。</p></article>
+</div><div class="creator-note"><p class="kicker">YOUR LOGO, YOUR CREATION</p><h2>そのロゴをつくったのは、あなたです。</h2><p class="creator-lead">PLAでは、ロゴの創作者はあなた自身です。</p><p>あなたの情熱から生まれた想いを、あなた自身が考え、選び、判断する。</p><p>PLAは、その過程に専門家として寄り添い、デザインの視点や技術を提供しながら、あなたの考えをロゴとして完成させます。</p><p>だから、完成したロゴは単に誰かに作ってもらったものではありません。</p><p class="creator-emphasis">あなた自身が生み出した、あなたの情熱の象徴です。</p><p>ロゴに愛着が生まれるのは、そこに自分の想いと意思が込められているからです。</p></div></div></section>
+
+<section id="flow"><div class="wrap"><div class="center"><p class="kicker">04 / PROCESS</p><h2>ロゴが生まれるまで</h2><p class="muted">決まった回数や期間を設けず、内容に合わせて個別に進めます。</p></div><div class="steps">
+<article class="step"><b>STEP 01</b><h3>想いを共有する</h3><p>事業への想いや背景、ロゴに込めたいことを対話しながら整理します。</p></article>
+<article class="step"><b>STEP 02</b><h3>考え、選ぶ</h3><p>方向性やアイデアを検討し、あなた自身が納得できる道筋を選びます。</p></article>
+<article class="step"><b>STEP 03</b><h3>形にする</h3><p>選んだ方向性をもとに、プロの技術でロゴを制作・調整します。</p></article>
+<article class="step"><b>STEP 04</b><h3>完成・決済・納品</h3><p>仕上がりを確認し、決済完了後にデータとLOGORIAをお渡しします。</p></article>
+</div><div class="role-grid"><div class="role"><span class="tag">YOUR ROLE</span><h3>あなたが担うこと</h3><ul><li>想いやアイデアを出す</li><li>方向性を考え、選ぶ</li><li>デザインの基本成形・判断・決定をする</li></ul></div><div class="role"><span class="tag">PLA ROLE</span><h3>私が担うこと</h3><ul><li>対話と専門的な視点でサポートする</li><li>デザインとして成立する形へ導く</li><li>Illustratorで制作・調整・仕上げを行う</li></ul></div></div></div></section>
+
+<section class="white" id="price"><div class="wrap narrow center"><p class="kicker">05 / SERVICE & PRICE</p><h2>サービス内容・料金</h2><p class="lead">あなたの情熱から、あなた自身のロゴをつくる個別サポートです。</p><p class="price">200,000円 <small>（税別）</small></p><p class="muted">税込 220,000円</p><p class="muted">オンラインでの対話・チャットによる個別サポートを含みます。制作内容に応じて進行するため、固定の期間や面談回数は設けていません。</p><h3 style="margin-top:42px">納品データ</h3><ul class="deliverables"><li>Adobe Illustrator形式（AI）</li><li>PDF</li><li>JPG</li><li>背景透過PNG</li><li>PLA ORIGINAL LOGORIA（記録書）</li></ul><p class="note">完成データは、決済確認後に納品します。</p></div></section>
+
+<section id="faq"><div class="wrap narrow"><div class="center"><p class="kicker">06 / FAQ</p><h2>よくある質問</h2></div><div class="faq">
+<details><summary>デザインやIllustratorの知識がなくても大丈夫ですか？</summary><p>大丈夫です。Illustratorの操作を学ぶ講座ではありません。あなたは想いやアイデアを出し、考え、選ぶことに集中してください。技術的な制作はPLAが担当します。ただし必要に応じて、検討や決断の材料としてデザイン知識を共有します。</p></details>
+<details><summary>自分でロゴをデザインできる必要がありますか？</summary><p>必要ありません。あなたの考えを出発点に、専門的な視点で整理しながら形にしていきます。</p></details>
+<details><summary>どのくらいの期間がかかりますか？</summary><p>ご依頼内容や検討の進み方によって異なるため、一律の期間は設けていません。進行の目安はご相談時に確認します。</p></details>
+<details><summary>個人でも依頼できますか？</summary><p>法人・事業者に限らず、個人の方からのご相談も歓迎しています。お申し込み内容に応じて、契約・決済方法をご案内します。</p></details>
+<details><summary>ロゴの創作者・権利者は誰になりますか？</summary><p>PLAでは、ロゴの創作者はあなた自身です。あなたが考え、選び、判断した内容をもとに、PLAは専門的な助言と技術的なデータ作成・仕上げを担当します。完成したロゴの権利は、依頼者であるあなたに帰属します。なお、第三者の権利に属する素材等は、それぞれの利用条件に従います。</p></details>
+</div></div></section>
+
+<section class="white" id="profile"><div class="wrap"><div class="profile">
+<img class="profile-photo" src="assets/kei-profile.jpg" alt="PLAを担当するデザイナー ケイのプロフィール写真">
+<div><p class="kicker">07 / ABOUT THE DESIGNER</p><h2>情熱を、デザインとして成立させる。</h2><p class="profile-name">『情熱をロゴに変換するサポートをします』 ケイ</p><p class="profile-copy muted">グラフィックデザインの実務経験をもとに、グラフィックデザイナーとしてロゴデザインを中心とした制作に携わっています。自身のデザインスクールで統括講師としてデザイナーの育成もしています。デザインを見た目だけで捉えるのではなく、目的や伝える相手、事業に込められた想いから考えることを大切にしています。</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap narrow center"><p class="kicker">08 / CONTACT</p><h2>あなたの情熱を、<br>ロゴにしませんか。</h2><p class="lead">まずは、あなたが大切にしている想いを聞かせてください。</p><p class="muted">PLAでのロゴづくりについて、内容や進め方をご案内します。</p><div class="cta-row" style="justify-content:center"><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc4mRXDss__qDh6ck3ma7S_2ZZkLltTQEIHplTkXccbGbD9vQ/viewform" target="_blank" rel="noopener">お問い合わせ・相談する <span>›</span></a><a class="cta cta-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfX1MZOWhq-PyY6hwPhu2z187iJiRLyfEiiHCX023OsHauqnw/viewform" target="_blank" rel="noopener">お申し込み <span>›</span></a></div></div></section>
+</main>
+<footer><div class="wrap">PASSION-TO-LOGO ALCHEMIST　/　PLA
+<div class="footer-links" aria-label="関連情報">
+  <a href="pla_terms.html">利用規約</a>
+  <a href="pla_privacy_policy.html">プライバシーポリシー</a>
+  <a href="https://keidessert.stores.jp/tokushoho" target="_blank" rel="noopener">特定商取引法に基づく表記</a>
+</div>
+</div></footer>
+<script>
+(() => {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#site-nav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', () => {
+    const opened = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!opened));
+    toggle.setAttribute('aria-label', opened ? 'メニューを開く' : 'メニューを閉じる');
+    nav.classList.toggle('is-open', !opened);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'メニューを開く');
+      nav.classList.remove('is-open');
+    });
+  });
+})();
+</script>
+</body></html>
